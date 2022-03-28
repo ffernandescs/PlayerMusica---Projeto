@@ -232,14 +232,14 @@ function closeColor() {
     
 }
 
-function btnBackgroundOrig(){
+function btnBackground(){
     let containerBackground = document.querySelector('.container');
     containerBackground.style = 
     'background-image: linear-gradient(180deg, #5c3f64 0, #4a2f5e 25%, #321f59 50%, #0a1254 75%, #000550 100%);'
     menuList.style = 
     'background-image: radial-gradient(circle at 50% -20.71%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);';
 };
-function btnBackground(){
+function btnBackgroundOrig(){
     let containerBackground = document.querySelector('.container');
     containerBackground.style = 
     'background-image: radial-gradient(circle at 50% -20.71%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);';
