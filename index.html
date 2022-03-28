@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f84144252b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <title>Projeto MusicPlayer</title>
+</head>
+<body>  
+  <div class="container">
+    <div class="contCores">
+      <span class="btnColor" onclick="btnBackgroundOrig()"></span>
+      <span class="btnColorOrig" onclick="btnBackground()"></span>
+      <span id="btnClose" class="material-icons" onclick="closeColor()">close</span>
+    </div>
+    <div class="altColorBack">
+      <span id="paletteColor" class="material-icons" onclick="colorBackground()">palette</span>
+    </div>
+    <div class="heead">
+      <h1>Music Player</h1>
+    </div>
+    <div class="imgTrack">
+      <img src="" alt="">
+    </div>
+    <div class="textTrack">
+      <h3 class="textName">Quando deus criou você</h3>
+      <p class="textArtist">Banda Ellos</i>
+    </div>
+    <div class="barSlide">
+      <div class="slide">
+        <span class="bar"></span>
+        <span class="ponto"></span>
+  
+        <audio src=""></audio>
+      </div>
+  
+    </div>
+    <div class="timeTrack">
+      <span class="currentTime">0:00</span>
+      <span class="duration">3:45</span>
+    </div>
+    <div class="volume">
+      <span class="material-icons" id="on" onclick="muteTrack()" onmouseover="abrirVolume()" onmouseout="fecharTrack()">volume_up</span>
+      <span class="material-icons" id="onMobile">volume_up</span>
+      <input onchange="volumeChange()" onmouseover="abrirVolume2()" onmouseout="fecharVolume2()" id="volumeTrack" type="range" min="0" max="100" value="100">
+    </div>
+    <div class="controles">
+      <span id="repeatTrack" class="material-icons" onclick="repeatTrack()">repeat</span>
+      <span id="prevTrack" class="material-icons" onclick="prevTrack()">skip_previous</span>
+      <span id="playPause" class="material-icons" onclick="playPause()">play_circle_filled</span>
+      <span id="nextTrack" class="material-icons" onclick="nextTrack()">skip_next</span>
+      <span id="listTrack" class="material-icons" onclick="listTrack()">queue_music</span>
+    </div>
+    <div class="listTrackMusic">
+      <div class="contListMusic">
+        <span id="listTrack" class="material-icons">queue_music</span>
+        <p>Music List</p>
+        <span id="close" class="material-icons" onclick="closeList()">close</span>
+      </div>
+      <ul class="listMusicAudio">
+        
+      </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="fecharMenu"></div>
+  <script src="./js/musicList.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
